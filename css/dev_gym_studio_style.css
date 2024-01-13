@@ -1,0 +1,354 @@
+/*Basic tags styling*/
+ html{
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+ hr{
+     border: 2px solid lightslategrey;
+}
+ body{
+     background-color: #202020;
+}
+th,td{
+    color: white;
+}
+/*Keyframes*/
+ @keyframes fadeIn {
+     from {
+         opacity: 0.75;
+    }
+     to {
+         opacity: 1;
+    }
+}
+ @keyframes fadeOut {
+     from {
+         opacity: 1;
+    }
+     to {
+         opacity: 0.75;
+    }
+}
+ @keyframes showUpSmallPicture{
+     from{
+         width: 75%;
+         height: auto;
+    }
+     to{
+         object-fit: cover;
+         margin: auto;
+         width: 80%;
+         position: absolute;
+    }
+}
+ @keyframes showUpSmallTabPicture{
+     from{
+         width: 75%;
+         height: auto;
+    }
+     to{
+         object-fit: cover;
+         margin: auto;
+         position: absolute;
+    }
+}
+ @keyframes hideSmallPicture{
+     from{
+         object-fit: cover;
+         margin: auto;
+         width: 80%;
+         position: absolute;
+    }
+     to{
+         width: 75%;
+         height: auto;
+    }
+}
+ @keyframes hideSmallTabPicture{
+     from{
+         object-fit: cover;
+         margin: auto;
+         width: 50%;
+         left: 25%;
+         position: absolute;
+    }
+     to{
+         width: 75%;
+         height: auto;
+    }
+}
+ @keyframes animateDecorationImage{
+     0%{
+         content: url('../images/dvg_page_decoration1.png');
+    }
+     50%{
+         opacity: 0.5;
+    }
+     to{
+         opacity: 1;
+         content: url('../images/dvg_page_decoration1_animated.png');
+    }
+}
+ @keyframes reanimateDecorationImage{
+     0%{
+         content: url('../images/dvg_page_decoration1_animated.png');
+    }
+     50%{
+         opacity: 0.5;
+    }
+     to{
+         opacity: 1;
+         content: url('../images/dvg_page_decoration1.png');
+    }
+}
+/*Classes and ids*/
+ .up-panel{
+     display: inline-flex;
+     left: 0px;
+     opacity: 0.75;
+     top: 0px;
+     width: 100%;
+     position: fixed;
+     background-color: rgba(255, 255, 255, 0.0125);
+}
+ .up-panel a{
+     font-size: 24px;
+     margin: auto 10px auto 20px;
+     color: #FFFFFF;
+     text-decoration: none;
+}
+ .up-panel h1{
+     padding-left: 10%;
+     color: #FFFFFF;
+     font-size: 24px;
+}
+ .up-panel:hover{
+     animation: fadeIn 0.75s ease-in-out forwards;
+     -webkit-animation: fadeIn 0.75s ease-in-out forwards;
+     -moz-animation: fadeIn 0.75s ease-in-out forwards;
+     -ms-animation: fadeIn 0.75s ease-in-out forwards;
+     -o-animation: fadeIn 0.75s ease-in-out forwards;
+     background-image: linear-gradient(135deg,#05445E,#189AB4,#75E6DA,#D4F1F4);
+}
+ .up-panel:not(:hover){
+     animation: fadeOut 0.75s ease-in-out forwards;
+     -webkit-animation: fadeOut 0.75s ease-in-out forwards;
+     -moz-animation: fadeOut 0.75s ease-in-out forwards;
+     -ms-animation: fadeOut 0.75s ease-in-out forwards;
+     -o-animation: fadeOut 0.75s ease-in-out forwards;
+}
+ .up-panel a: hover{
+     color: #CCCCCC;
+}
+ .up-tab{
+     display: inline-flex;
+     color: #FFFFFF;
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     background: linear-gradient(135deg,#05445E,#189AB4,#75E6DA,#D4F1F4) fixed;
+     width: 100%;
+     height: 40%;
+}
+ #logotype{
+     transform: scaleX(-1.0);
+     margin: auto;
+     width: 20%;
+     height: auto;
+}
+ #decoration{
+     margin: auto 0% 0% auto;
+     bottom: 5%;
+     width: auto;
+     height: 50%;
+}
+ .up-tab h1{
+     margin: auto 5% auto -10%;
+     font-size: 42px;
+}
+ .bottom-tab{
+     display: inline-block;
+     position: absolute;
+     top: 40%;
+     left: 0px;
+     background-color: #202020;
+     width: 100%;
+     height: 60%;
+}
+ .second-bottom-tab{
+     display: inline-block;
+     position: absolute;
+     top: 140%;
+     left: 0px;
+     background-color: #202020;
+     width: 100%;
+     height: 60%;
+}
+ @media(max-width: 840px){
+     .second-bottom-tab{
+         top: 120%;
+    }
+}
+ .bottom-tab h1,h2,h3{
+     font-size: 30px;
+     color: rgba(255, 255, 255, 0.75);
+     padding-left: 10%;
+}
+ .small-bottom-tab{
+     display: inline-block;
+     top: 45%;
+     background-color: #202020;
+     padding-left: 10%;
+     padding-right: 10%;
+     width: 80%;
+     height: auto;
+}
+ .small-bottom-tab strong{
+     color: rgba(255, 255, 255, 0.75);
+     font-size: 26px;
+}
+ .small-bottom-tab img{
+     align-self: stretch;
+     width: 100%;
+     height: auto;
+     border-radius: 10px;
+}
+ #decoration1{
+     margin: auto;
+     left: 5px;
+     width: 25%;
+     height: 25%;
+}
+ #decoration1:hover{
+     animation: animateDecorationImage 1.0s ease-in-out forwards;
+}
+ #decoration1:not(:hover){
+     animation: reanimateDecorationImage 1.0s ease-in-out forwards;
+}
+ .gallery{
+     display: inline-grid;
+     grid-gap: 5%;
+     grid-template-columns: 2fr 1fr 1fr;
+     grid-template-rows: 1.5fr 2fr;
+}
+ #main-picture{
+     grid-column: span 2;
+     grid-row: span 2;
+     width: 100%;
+     height: auto;
+}
+ #small-picture{
+     width: 75%;
+     height: auto;
+}
+ #small-tab-picture{
+     width: 75%;
+     height: auto;
+}
+ .gallery-with-logotype{
+     display: inline-grid;
+     grid-template-columns: 1fr 2fr 2fr;
+     grid-template-rows: 0.5fr 0.5fr;
+}
+ #logotype-picture{
+     width: 50%;
+     height: auto;
+     margin: auto;
+}
+ #small-picture:hover{
+     animation: showUpSmallPicture 0.5s ease-in-out forwards;
+}
+ #small-tab-picture:hover{
+     object-fit: cover;
+     margin: auto;
+     position: absolute;
+     width: 60%;
+     left: 20%;
+}
+ #small-picture:not(:hover){
+     animation: hideSmallPicture 0.5s ease-in-out forwards;
+}
+ #huge-strong-tag{
+     font-size: 30px;
+     color: white;
+}
+ #drive-picture{
+     width: 10%;
+     height: auto;
+}
+ #strong-in-left-corner{
+     display: inline-block;
+     padding-left: 2.5%;
+     padding-top: 2.5%;
+}
+ .tab-of-links{
+     width: 75%;
+     height: auto;
+     padding-left: 12.5%;
+     padding-right: 12.5%;
+     display: inline-grid;
+     padding-top: 2.5%;
+     grid-template-columns: 1fr 1fr 1fr;
+}
+ .tab-of-links img{
+     display: inline-block;
+     width: 200px;
+     height: auto;
+     margin: auto;
+}
+ .modal {
+     display: none;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     padding: 20px;
+     width: 60%;
+     max-width: 500px;
+     max-height: 350px;
+     background-color: rgb(30, 30, 30);
+     border: 5px solid rgb(35, 35, 35);
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     z-index: 1;
+}
+ .modal strong{
+     color: white;
+}
+ .modal span{
+     display: block;
+}
+ .overlay {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     z-index: 0;
+}
+ .close {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     cursor: pointer;
+}
+ #right-text-tab{
+     margin: auto 10% auto auto;
+}
+ .support-methods{
+ 	display: inline-flex;
+    background-color: rgb(30, 30, 30);
+ 	width: 60%;
+ 	height: auto;
+ 	padding-left: 20%;
+ 	padding-right: 20%;
+ }
+ .support-methods a{
+    text-decoration: none;
+    margin: auto;
+    color: white;
+ }
+ .support-methods strong{
+    margin: auto 2.5% auto 2.5%;
+ }
+ /*We're indie-games developers team, that currently looking for any support, instead supporter can get sneak-peaks of our coming up projects*/
