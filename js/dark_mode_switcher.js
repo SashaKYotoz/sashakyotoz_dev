@@ -1,7 +1,6 @@
 let switcher = document.getElementById("switch");
 let isDark = switcher.checked;
 
-// Detect user theme preference
 function detectThemePreference() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         console.log("Detected system theme: Dark");
@@ -12,7 +11,6 @@ function detectThemePreference() {
     }
 }
 
-// Apply theme based on preference or local storage
 if (localStorage.getItem("switcher")) {
     isDark = localStorage.getItem("switcher") === "true";
     console.log("Using theme from localStorage: " + (isDark ? "Dark" : "Light"));
@@ -24,7 +22,6 @@ if (localStorage.getItem("switcher")) {
 checkTheme();
 switcher.checked = isDark;
 
-// Listen for switcher changes
 switcher.addEventListener("change", () => {
     isDark = switcher.checked;
     checkTheme();
@@ -32,7 +29,6 @@ switcher.addEventListener("change", () => {
     console.log("Theme changed by switcher: " + (isDark ? "Dark" : "Light"));
 });
 
-// Function to check and apply theme
 function checkTheme() {
     let texts = Array.from(document.getElementsByClassName('toswitch'));
     let cardBody = Array.from(document.getElementsByClassName('card-body'));
@@ -43,6 +39,8 @@ function checkTheme() {
     if (isDark) {
         document.body.classList.add("bg-dark");
         document.body.classList.remove("bg-white");
+        overlayContent.classList.add("bg-dark", "white-text");
+        overlayContent.classList.remove("bg-white" , "dark-text");
         footer.classList.add("bg-white");
         footer.classList.remove("bg-dark");
         texts.forEach(element => {
@@ -64,6 +62,8 @@ function checkTheme() {
     } else {
         document.body.classList.remove("bg-dark");
         document.body.classList.add("bg-white");
+        overlayContent.classList.remove("bg-dark","white-text");
+        overlayContent.classList.add("bg-white","dark-text");
         footer.classList.add("bg-dark");
         footer.classList.remove("bg-white");
         texts.forEach(element => {
@@ -85,7 +85,6 @@ function checkTheme() {
     }
 }
 
-// Check if cookie is manually changed
 function checkCookieIntegrity() {
     if (document.cookie.includes("switcher")) {
         let cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)switcher\s*\=\s*([^;]*).*$)|^.*$/, "$1");

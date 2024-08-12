@@ -4,35 +4,30 @@
             "id":"wrathy_armament",
             "name": "Wrathy Armament",
             "projectid":"1075856",
-            "description": "data/wrathy_armament_desc.md",
-            "plans":"Port and support 1.20.1 for Fabric \n Port mod to 1.21, when 1.21 patch of playerAnimator will be released"
+            "description": "data/wrathy_armament_desc.md"
         },
         {
             "id":"unseen_world",
             "name": "Unseen World",
             "projectid":"550263",
-            "description": "data/unseen_world_desc.md",
-            "plans":"Port mod to 1.21(NeoForge)"
+            "description": "data/unseen_world_desc.md"
         },
         {
             "id":"various_world",
             "name": "Various World",
             "projectid":"544497",
-            "description": "data/various_world_desc.md",
-            "plans":"Port mod to 1.21(NeoForge)"
+            "description": "data/various_world_desc.md"
         },
         {
             "id":"humbledless_world",
             "name": "Humbledless World",
             "projectid":"904702",
-            "description": "data/humbledless_world_desc.md",
-            "plans":"Port mod to 1.21(NeoForge)"
+            "description": "data/humbledless_world_desc.md"
         },
         {
             "id":"sashakyotoz_gamedev",
             "name": "GameDev by SashaKYotoz",
-            "description": "data/sashakyotoz_gamedev_desc.md",
-            "plans": "???"
+            "description": "data/sashakyotoz_gamedev_desc.md"
         }
     ]
 }

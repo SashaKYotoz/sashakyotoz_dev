@@ -1,0 +1,120 @@
+<h1>Various World</h1>
+
+<p> expansion oriented Minecraft mod for Forge(and NeoForge in future), that try to expanse Minecraft content in general: New difficulties, tools and materials, materials and workbenches, to fit its slogan - Across world and its beauty!</p>
+
+<h2>Biomes</h2>
+
+<ul>
+<li>
+<strong>Peaceful Wasteland</strong>
+savanna-like biome, full of magnolia trees and friendly spirits.
+In biome can be spawned: wolf, spirit of peaceful wasteland, and allay.
+Features: magnolia trees, saffrons and bunches of grass. 
+</li>
+<li>
+<strong>Shiny Valley</strong>
+stepp-like biome, usually nearby water with fullness of lakes, gneiss and brightness.
+In biome can be spawned: dromophant, zombie of various biomes and spirit of peaceful wasteland
+Feature: jungle-magnolia trees, layers of gneiss, water lakes.
+</li>
+<li>
+<strong>Crystalic Forest</strong>
+midlands-like biome, fulled by crystals.
+In biome can be spawned: zombie of various biomes, crystalic slimes and other hostile mobs of Minecraft.
+Features: crystalic oak trees, crystalic big mushrooms, and crystalic geodes underground.
+Structures: crystalic villagers' village, crystalic temple(place, where Crystalic Warrior can be summoned)
+</li>
+<li>
+<strong>Sculk Valley</strong>
+highlands-like biome, that presents sculk world above darkness of deep of Minecraft's overworld.
+In biome can be spawned: Spirit Summoned by Sculks, Sculk Skeletons, and other hostile mobs of Minecraft.
+Features: Biome unlocks only after slaying of Crystalic Warrior .high sculk trees and bunches of spiky sculk.
+Structures: sculk necromancer dungeon(place, where Sculk Skeleton Necromancer can be summoned)
+</li>
+<li>
+<strong>Caverns of Deep</strong>
+cave biome of luminous mushrooms.
+In biome can be spawned: spirit of deep caverns, dark fury and other hostile mobs of Minecraft.
+Features: water lakes, big luminous mycenas, and vines of dragon eyes branches. 
+</li>
+<li>
+<strong>Caverns of Magma overgrowths</strong>
+cave biome of hottness and magma.
+In biome can be spawned: zombie of magma overgrowth, zombie of various biomes and other hostile mobs of Minecraft.
+Features: layers of stoned magma, bunches of anthurium and glowstone.
+Structures: black stoned magma bricks dungeon 
+</li>
+</ul>
+
+<hr>
+
+<h2>Mobs 'n' Bosses</h2>
+<ul>
+<li>
+<strong>Zombie of Various Biomes</strong>
+zombie-like hostile mob, keeper of crystalic strength. Most often spawns in Crystalic Forest biome. Can drop crystalic strength, magic vine, glowstone, crystalic slimeball.
+</li>
+<li>
+<strong>Zombie of Stony Magma</strong>
+zombie-like hostile mob. Most often spawns in Caverns of Magma overgrowths. Can drop magma-related items.
+</li>
+<li>
+<strong>Various Armed Skeleton</strong>
+skeleton-like hostile mob. Spawns around Minecraft's overworld. Can drop pieces of armor, that equiped on.
+</li>
+<li>
+<strong>Sculk Skeleton</strong>
+skeleton-like hostile mob. Spawns in Sculk Valley and in Necromancer's dungeon. Can drop sculk-related items, including sculked darknium sword and sculk armor.
+</li>
+<li>
+<strong>Zany Viler Witch</strong>
+Minecraft Earth witch mob. Spawns in its expanded swamp hut. Can drop witch-retaled items.
+</li>
+<li>
+<strong>Wandering Spirit Summoned of Sculks</strong>
+sculk-retaled hostile mob inspired by first concepts of Warden. Spawns in Sculk Valley. Can drop sculk-related items.
+</li>
+<li>
+<strong>Spirit of Peaceful Wasteland</strong>
+allay-like creature mob. Spawns in Peaceful Wasteland and Shiny Valley. Can drop item, that has in hand.
+When tamed - heals nearby players and hits owner's target.
+</li>
+<li>
+<strong>Spirit of Deep Caverns</strong>
+allay-like creature mob. Spawns in Caverns of Deep and Caverns of Magma Overgrowth. Can drop item, that has in hand.
+When tamed - applies effect of haste to its owner.
+</li>
+<li>
+<strong>Dromophant</strong>
+elephant-like creature mob. Spawns in Shiny Valley.
+When tamed - up to 2 players can ride it
+</li>
+<hr>
+<li>
+<strong>Crystalic Warrior</strong>
+First mod's boss, that unlocks Sculk Valley. Can be spawned by clicking 'crystalic strength item' on altar. Altar can be found in crystalic temple - structure in Crystalic Forest.
+Warrior behaves like iron golem, but can leap on its target and knock with ingnoring of knockback resistance.
+As result of slaying drops: pieces of crystalic armor and crystalic sword.
+</li>
+<li>
+<strong>Spirit of Dark</strong>
+Vex-like mod's boss. Can be spawned in its platforms-like structure(most often can be found above dark oak forest), by clicking with crystal gem, item dropped by Crystalic Warrior.
+Spirit behaves like big vex, with ability of blocking by shields, its shields' shooting in player, and telepoting up to player.
+As result of slaying drops: pieces of angel-star armor and totem of dark spirit.
+</li>
+<li>
+<strong>Sculk Necromancer Skeleton</strong>
+Sculk-retaled boss. Can be spawned in dungeon in Sculk Valley(dungeon has 2 varients, where one without altar of boss), by interacting with altar.
+Necromancer behaves like evoker, with ability of shooting chains on target(recommend to use shield to block it), and spawns sculk skeletons.
+As result of slaying drops: sculk scythe or necromancer wand, and sculk-retaled items.
+</li>
+<li>
+<strong>Lord of Furies</strong>
+Dragon-like boss. Can be spawned in its end-city-like structure in End, by clicking on its altar with 3 shards, that can be found in chests of structure.
+Lord of Furies behaves like smaller variant of Ender Dragon, can't destroy blocks, but can spawn its myrmidons - dark furies.
+As result of slaying drops: its head and its scales.
+</li>
+</ul>
+
+<h3>'More colors' advancement</h3>
+<p>Some mod's items can be united to recolor weapons. To upgrade weapon - it have to be put in offhand of player, and material have to be put in main hand(f.e. - sculk scythe + crystal shard)</p>

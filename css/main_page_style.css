@@ -124,10 +124,9 @@ body {
   align-items: center;
   z-index: 1000;
 }
-
 .overlay-content {
   background: white;
-  padding: 20px;
+  padding: 24px;
   border-radius: 8px;
   max-width: 80%;
   max-height: 80%;

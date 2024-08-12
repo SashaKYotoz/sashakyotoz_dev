@@ -23,13 +23,13 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Modmaking</a>
+                    <a class="nav-link" href="#Modmaking">Modmaking</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">GameMaking</a>
+                    <a class="nav-link" href="#GameMaking">GameMaking</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Support</a>
+                    <a class="nav-link" href="#Support">Support</a>
                 </li>
             </ul>
         </div>
@@ -39,12 +39,12 @@
         <div class="container text-center">
             <h1>Wanna find something?</h1>
             <p>If so, just enter what you are looking for!</p>
-            <form class="search-form">
-                <input type="text" class="form-control" placeholder="Type your search terms here">
+            <form class="search-form" id="search-form">
+                <input id="term-searcher" type="text" class="form-control" placeholder="Type your search terms here">
                 <button type="submit" class="btn btn-primary">Search</button>
             </form>
         </div>
-    </header>
+    </header>    
 
     <main class="container my-5">
         <div class="row">
@@ -130,6 +130,17 @@
                             </div>
                         </li>
                     </ul>
+                    <hr>
+                    <h2 id="Support">Support</h2>
+                    <ul class="list-unstyled">
+                        <li class="media my-4 content-box">
+                            <i class="fas fa-file-alt fa-2x mr-3"></i>
+                            <p class="mt-0 mb-1 white-text">In case of finding bug, or suggestiong requiest for any of my projects write me in Discord: sashakyotoz | SashaKYotoz#8808</p>
+                            <a href="https://discord.gg/APRgEmYm4w">
+                                <img style="padding-top: 2.5%; width: 95%; height: auto;" src="https://imgur.com/YYnr9MS.png" alt="Link on Discord Server">
+                            </a>
+                        </li>
+                    </ul>
                 </ul>
             </div>
             <div class="col-md-3 fixed-content">
@@ -149,18 +160,18 @@
                         <strong>Contact</strong>
                     </div>
                     <div class="card-body bg-white">
-                        <ul class="list-unstyled">
+                        <ul id="specific-list" class="list-unstyled">
                             <li><p class="dark-text toswitch">Discord</p></li>
                             <li>
-                                <a href="https://discord.gg/vjyzphNywy" target="_blank">
-                                <img src="https://img.shields.io/discord/1155188824360624148?color=Green&label=Discord&logo=Discord&style=flat-square" alt="Discord">
-                            </a> 
+                                <a href="https://discord.gg/vjyzphNywy" target="_blank" class="link-element">
+                                    <img src="https://img.shields.io/discord/1155188824360624148?color=Green&label=Discord&logo=Discord&style=flat-square" alt="Discord" class="image-element">
+                                </a> 
                             </li>
                             <hr>
                             <li><p class="dark-text toswitch">Instagram</p></li>
                             <li>
-                                <a href="https://www.instagram.com/sashakyotoz/" target="_blank">
-                                    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
+                                <a href="https://www.instagram.com/sashakyotoz/" target="_blank" class="link-element">
+                                    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" class="image-element">
                                 </a>
                             </li>
                         </ul>
