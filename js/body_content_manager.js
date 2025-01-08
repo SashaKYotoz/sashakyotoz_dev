@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const input = document.getElementById("term-searcher");
 const form = document.getElementById("search-form");
 
-form.addEventListener("submit", function(event) {
+form.addEventListener("submit", function (event) {
     event.preventDefault();
     checkForm();
 });

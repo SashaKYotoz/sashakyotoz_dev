@@ -2,6 +2,40 @@
 
 <p> expansion oriented Minecraft mod for Forge(and NeoForge in future), that try to expanse Minecraft content in general: New difficulties, tools and materials, materials and workbenches, to fit its slogan - Across world and its beauty!</p>
 
+<h3>FAQ</h3>
+<ul>
+<li>
+<strong>How to summon mod bosses and what they drop?</strong>
+<p>
+    Crystalic Warrior - first boss in Various World, looks like regular golem covered by crystals. Can be summoned by clicking on its altar with crystalic strength item. Altar on its way can be found in structure made out of rose quartz in Crystalic Forest biome. By defeating it, player unlock ability to go into Sculk Valley biome.
+    <hr>
+    Dark Spirit - flyable boss, looks like humanoid version of vex. Can be summoned  clicking on its altar with crystalic gem item dropped by Crystalic Warrior. Altar can be found in levitating structure above Dark Oak forest biome.
+    <hr>
+    Sculk Necromancer - huge skeleton boss. Can be summoned  clicking on its altar with empty hand. Altar can be found in surface-underground structure in Sculk Valley biome.
+    <hr>
+    Lord Furies - small dragon boss. Can be summoned  clicking on its altar with 3 specific shards found in its structure. Altar can be found in main tower of its structure in End.
+</p>
+</li>
+<li>
+<strong>How to stop Sculk Valley to hit player?</strong>
+<p>
+    Once you defeated Crystalic Warrior, biome will stop to damage player.
+</p>
+</li>
+<li>
+<strong>What does Totem of Spirit do?</strong>
+<p>
+    This totem dropped from Dark Spirit gives ability for player of creative fly, if player 5 or less blocks above any solid block.
+</p>
+</li>
+<li>
+<strong>What does Artifacts' Table do?</strong>
+<p>
+    Items like Explorer Necklace, Regeneration Gem and similar consider as artifacts that can be put into table, as a result, player gets 32x32x32 area portative beacon that gives some effects according to put items.
+</p>
+</li>
+</ul>
+
 <h2>Biomes</h2>
 
 <ul>

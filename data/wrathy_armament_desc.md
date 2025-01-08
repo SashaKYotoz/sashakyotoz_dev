@@ -4,7 +4,6 @@
 
 oriented to provide weapons from game-world-wide galaxies "to give opportunities for Steve to try them".</p>
 
-  
 
 <h2>Weapons</h2>
 
@@ -38,6 +37,12 @@ To summon Moon Lord, <i>make something with first npc of Terraria - Guide</i>
 <strong>Half Zatoichi</strong> - bloodliker weapon from Team Fortress 2.Adding of this weapon was suggested by Habciak. In game can be obtained by crafting on worldshard workbench.
 </li>
 <li>
+<strong>Mirrow Sword</strong> - weapon made up by Habciak, Polish translator of mod. In game can be obtained by slaying Habciak in its structure that spawns in desert-like biomes.
+</li>
+<li>
+<strong>Blackrazor</strong> - soulsliker weapon from D&D series, where it can be found in the deepnesses of mountain biomes.
+</li>
+<li>
 <strong>Meowmere | Copper Sword </strong> - under revision to became weapons like they're in original game
 </li>
 </ul>
@@ -67,6 +72,7 @@ To summon Moon Lord, <i>make something with first npc of Terraria - Guide</i>
     <li>
         Right click with shifting, and 1 second of delay
     </li>
+    </ul>
     <p><i>Left click:</i></p>
     <ul>
     <li>

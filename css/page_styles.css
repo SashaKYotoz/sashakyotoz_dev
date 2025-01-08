@@ -99,8 +99,8 @@ body {
   visibility: visible;
   position: fixed;
   padding: auto;
-  left: 67.5%;
-  padding-right: 12.5%;
+  left: 75%;
+  padding-right: 15%;
 }
 }
 .badge {
@@ -130,7 +130,31 @@ body {
   border-radius: 8px;
   max-width: 80%;
   max-height: 80%;
-  width: 50%;
-  height: 50%;
+  width: 55%;
+  height: 55%;
   overflow-y: auto;
+}
+
+.dark-text {
+  transition: color 0.3s ease;
+}
+
+.bg-dark {
+  transition: background-color 0.3s ease;
+}
+.white-text {
+  transition: color 0.3s ease;
+}
+
+.bg-white {
+  transition: background-color 0.3s ease;
+}
+
+#content-keeper {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+#content-keeper.hidden {
+  opacity: 0;
 }

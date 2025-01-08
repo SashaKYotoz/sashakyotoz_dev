@@ -1,4 +1,5 @@
 let switcher = document.getElementById("switch");
+let switchLabel = document.getElementById("switchLabel");
 let isDark = switcher.checked;
 
 function detectThemePreference() {
@@ -35,7 +36,7 @@ function checkTheme() {
     let reversedTexts = Array.from(document.getElementsByClassName('toswitchR'));
     let headers = Array.from(document.getElementsByClassName('card-header'));
     let footer = document.getElementById("footer");
-
+    switchLabel.textContent = isDark ? "☀️" : "🌑";
     if (isDark) {
         document.body.classList.add("bg-dark");
         document.body.classList.remove("bg-white");

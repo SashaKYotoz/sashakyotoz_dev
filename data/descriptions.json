@@ -28,6 +28,11 @@
             "id":"sashakyotoz_gamedev",
             "name": "GameDev by SashaKYotoz",
             "description": "data/sashakyotoz_gamedev_desc.md"
+        },
+        {
+            "id":"sashakyotoz_support",
+            "name": "Support SashaKYotoz!",
+            "description": "data/sashakyotoz_support_desc.md"
         }
     ]
 }
