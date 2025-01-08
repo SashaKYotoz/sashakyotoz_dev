@@ -7,8 +7,7 @@ const sectionContent = {
         <img src="images/sashakyotoz_decorations/sashakyotoz_main_page.webp" class="card-img-top" alt="modmaking">
         <div class="card-body">
             <h5 class="card-title">Modmaking</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+            <p class="card-text">Switch page to mods related content</p>
             <a href="#" onclick="updateContentAndSection('Modmaking')" class="btn btn-primary stretched-link">Mods' wiki</a>
         </div>
     </div>
@@ -16,8 +15,7 @@ const sectionContent = {
         <img src="images/sashakyotoz_decorations/gamedev_page.webp" class="card-img-top" alt="gamedev">
         <div class="card-body">
             <h5 class="card-title">Gamemaking</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+            <p class="card-text">Switch page to gamedev related content</p>
             <a href="#" onclick="updateContentAndSection('GameMaking')" class="btn btn-primary stretched-link">Gamedev</a>
         </div>
     </div>
@@ -25,8 +23,7 @@ const sectionContent = {
         <img src="images/sashakyotoz_decorations/support_page.webp" class="card-img-top" alt="support">
         <div class="card-body">
             <h5 class="card-title">Support my work</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+            <p class="card-text">Switch page to author supporting</p>
             <a href="#" onclick="updateContentAndSection('Support')" class="btn btn-primary stretched-link">Support</a>
         </div>
     </div>
