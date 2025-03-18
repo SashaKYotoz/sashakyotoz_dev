@@ -3,7 +3,7 @@ let currentSection = "Home";
 const sectionContent = {
     Home: `<h2>Welcome to SashaKYotoz's Dev Hub</h2>
     <div class="row">
-    <div class="card bg-dark" style="width: 15rem;">
+    <div class="card bg-dark" style="width: 14rem;">
         <img src="images/sashakyotoz_decorations/sashakyotoz_main_page.webp" class="card-img-top" alt="modmaking">
         <div class="card-body">
             <h5 class="card-title">Modmaking</h5>
@@ -11,7 +11,7 @@ const sectionContent = {
             <a href="#" onclick="updateContentAndSection('Modmaking')" class="btn btn-primary stretched-link">Mods' wiki</a>
         </div>
     </div>
-    <div class="card bg-dark" style="width: 15rem;">
+    <div class="card bg-dark" style="width: 14rem;">
         <img src="images/sashakyotoz_decorations/gamedev_page.webp" class="card-img-top" alt="gamedev">
         <div class="card-body">
             <h5 class="card-title">Gamemaking</h5>
@@ -19,7 +19,7 @@ const sectionContent = {
             <a href="#" onclick="updateContentAndSection('GameMaking')" class="btn btn-primary stretched-link">Gamedev</a>
         </div>
     </div>
-    <div class="card bg-dark" style="width: 15rem;">
+    <div class="card bg-dark" style="width: 14rem;">
         <img src="images/sashakyotoz_decorations/support_page.webp" class="card-img-top" alt="support">
         <div class="card-body">
             <h5 class="card-title">Support my work</h5>
