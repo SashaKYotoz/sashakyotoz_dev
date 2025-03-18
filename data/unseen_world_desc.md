@@ -2,12 +2,13 @@
 
 <p>dimension-adding Minecraft mod for Forge and Fabric that shows dark version of Minecraft's overworld, where sun never rises.</p>
 
-<h2>Dimension</h2>
+<h2>Links:</h2>
+<p>Mod's issue reporting page: <a href="https://github.com/SashaKYotoz/Unseen_World/issues"></a></p>
 
-<p>Chimeric Darkness - mod's dimension, where water is dark, and hazards is everywhere, but even here you can find friends and a bunch of adventures on your head.
-Player can get into dimension via portal. Portal have to built like nether's one with 1 block wider, where frame block is <i>Cold Bricks</i>. Cold bricks can be either be found like broken portal sturcture in cold biomes of overworld or be bought in manson</p>
+<p>Curseforge: <a href="https://www.curseforge.com/minecraft/mc-mods/unseen-world">link</a></p>
+<p>Modrinth: <a href="https://modrinth.com/mod/unseen-world">link</a></p>
 
-<h3>FAQ</h3>
+<h2>FAQ</h2>
 <strong>How to get into dimension?</strong>
 <p>
     Both in versions for Forge and Fabric there's struture of broken portal in snowy biomes(f.e. snowy plains, snowy taiga), you can mine all of those specific bricks and build portal of shape 3x3x1 in Forge versions and 3x2x1 in Fabric versions(like Nether portal). 
@@ -62,3 +63,8 @@ Player can get into dimension via portal. Portal have to built like nether's one
 </p>
 </li>
 </ul>
+
+<h2>Dimension</h2>
+
+<p>Chimeric Darkness - mod's dimension, where water is dark, and hazards is everywhere, but even here you can find friends and a bunch of adventures on your head.
+Player can get into dimension via portal. Portal have to built like nether's one with 1 block wider, where frame block is <i>Cold Bricks</i>. Cold bricks can be either be found like broken portal sturcture in cold biomes of overworld or be bought in manson</p>

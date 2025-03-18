@@ -4,6 +4,11 @@
 
 oriented to provide weapons from game-world-wide galaxies "to give opportunities for Steve to try them".</p>
 
+<h2>Links:</h2>
+<p>Mod's issue reporting page: <a href="https://github.com/SashaKYotoz/wrathy_armament/issues"></a></p>
+
+<p>Curseforge: <a href="https://www.curseforge.com/minecraft/mc-mods/wrathy-armament">link</a></p>
+<p>Modrinth: <a href="https://modrinth.com/mod/wrathy-armament">link</a></p>
 
 <h2>Weapons</h2>
 
@@ -47,10 +52,8 @@ To summon Moon Lord, <i>make something with first npc of Terraria - Guide</i>
 </li>
 </ul>
 
-<h3>Recipes in v1.0</h3>
-    <p><i>In version 1.0 manual of recipes can be gotten by command /get_manual, in upcoming patches will be changed on book using some extra library</i></p>
-    <img src="images/sashakyotoz_decorations/recipe_instructions.png">
-
+<h3>Recipes</h3>
+    <p>Since version of 1.1 of Wrathy Armament, mod works with JEI, also posibility to add your own recipes for Worldshard Workbench was added.</p>
 <hr>
 <h3>Upgrades</h3>
     <p>Since version of 1.0, mod's weapons can be upgraded - sparkled. Each 'sparkle' can be collected by using worldshard workbench, if weapon has enough expirience. How to check if it's enough? Just put weapon on ground, if it glows by particles - expirience is enough to upgrade weapon. Then just put weapon in first slot of worldshard workbench</p>

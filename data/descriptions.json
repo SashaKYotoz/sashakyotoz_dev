@@ -1,36 +1,42 @@
 {
-    "projects":[
+    "projects": [
         {
-            "id":"wrathy_armament",
-            "name": "Wrathy Armament",
-            "projectid":"1075856",
-            "description": "data/wrathy_armament_desc.md"
+            "id": "bedrockoid",
+            "name": "Bedrockoid",
+            "projectid": "1217715",
+            "description": "data/bedrockoid_desc.md"
         },
         {
-            "id":"unseen_world",
+            "id": "unseen_world",
             "name": "Unseen World",
-            "projectid":"550263",
+            "projectid": "550263",
             "description": "data/unseen_world_desc.md"
         },
         {
-            "id":"various_world",
+            "id": "wrathy_armament",
+            "name": "Wrathy Armament",
+            "projectid": "1075856",
+            "description": "data/wrathy_armament_desc.md"
+        },
+        {
+            "id": "various_world",
             "name": "Various World",
-            "projectid":"544497",
+            "projectid": "544497",
             "description": "data/various_world_desc.md"
         },
         {
-            "id":"humbledless_world",
+            "id": "humbledless_world",
             "name": "Humbledless World",
-            "projectid":"904702",
+            "projectid": "904702",
             "description": "data/humbledless_world_desc.md"
         },
         {
-            "id":"sashakyotoz_gamedev",
+            "id": "sashakyotoz_gamedev",
             "name": "GameDev by SashaKYotoz",
             "description": "data/sashakyotoz_gamedev_desc.md"
         },
         {
-            "id":"sashakyotoz_support",
+            "id": "sashakyotoz_support",
             "name": "Support SashaKYotoz!",
             "description": "data/sashakyotoz_support_desc.md"
         }

@@ -36,9 +36,31 @@ const sectionContent = {
                     <li data-target="#carousel" data-slide-to="1"></li>
                     <li data-target="#carousel" data-slide-to="2"></li>
                     <li data-target="#carousel" data-slide-to="3"></li>
+                    <li data-target="#carousel" data-slide-to="4"></li>
                 </ol>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                <div class="carousel-item active">
+                        <div class="media-body" id="bedrockoid">
+                            <img class="img-box"
+                                src="images/mod_titles/bedrockoid_title.webp">
+                            <h4 class="mt-0 mb-1 white-text">Bedrockoid</h4>
+                            <div style="display: inline-block;">
+                                <a href="https://www.curseforge.com/minecraft/mc-mods/bedrockoid" target="_blank">
+                                    <img src="https://cf.way2muchnoise.eu/title/1217715.svg"
+                                        alt="Bedrockoid Title">
+                                    <img src="http://cf.way2muchnoise.eu/versions/1217715.svg"
+                                        alt="Bedrockoid Versions">
+                                    <img src="https://cf.way2muchnoise.eu/full_1217715_downloads.svg"
+                                        alt="Bedrockoid Downloads">
+                                </a>
+                                <a href="https://github.com/SashaKYotoz/Bedrockoid/blob/main/LICENSE.txt">
+                                    <img src="https://img.shields.io/badge/GPL-3.0-blue"
+                                        alt="GPL-3.0 license">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
                         <div class="media-body" id="wrathy_armament">
                             <img class="img-box"
                                 src="images/mod_titles/wrathy_armament_title.webp">

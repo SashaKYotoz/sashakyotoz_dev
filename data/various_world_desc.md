@@ -2,7 +2,12 @@
 
 <p> expansion oriented Minecraft mod for Forge(and NeoForge in future), that try to expanse Minecraft content in general: New difficulties, tools and materials, materials and workbenches, to fit its slogan - Across world and its beauty!</p>
 
-<h3>FAQ</h3>
+<h2>Links:</h2>
+<p>Mod's issue reporting page: <a href="https://github.com/SashaKYotoz/VariousWorld/issues"></a></p>
+
+<p>Curseforge: <a href="https://www.curseforge.com/minecraft/mc-mods/various-world">link</a></p>
+
+<h2>FAQ</h2>
 <ul>
 <li>
 <strong>How to summon mod bosses and what they drop?</strong>
