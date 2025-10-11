@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function tryOpenOverlayFromHash() {
         const id = getHashId();
         if (!id) return;
+        console.log("ID: " + id);
         fetchOverlayContent(id);
         overlay.style.display = "flex";
     }
