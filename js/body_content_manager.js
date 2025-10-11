@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         overlayContent.innerHTML = "";
     });
 
-    function fetchOverlayContent(contentId) {
+    window.fetchOverlayContent = function (contentId) {
         console.log(contentId);
         fetch(baseURL + 'data/descriptions.json')
             .then(response => response.json())
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch(error => {
                 overlayContent.innerHTML = `<p>Error loading content: ${error.message}</p>`;
             });
-    }
+    };
 });
 const input = document.getElementById("term-searcher");
 const form = document.getElementById("search-form");
