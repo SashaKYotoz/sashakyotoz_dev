@@ -9,6 +9,20 @@
 <p>Modrinth: <a href="https://modrinth.com/mod/various-world">link</a></p>
 
 <h2>FAQ</h2>
+<h3>For NeoForge versions</h3>
+<ul>
+<li>
+<strong>Why in mod's versions for Minecraft 1.21.+ content so differ?</strong>
+<p>
+    Various World in time of release of v3.5.2 was pretty big project. It wasn't vanilla-like at all with some stuff in any aspect of game.
+    This concept of variety of content with low quality and remainings of code from earlier versions of mod that were made with mcreator where
+    trashing project, as a result - mod needed a global review.
+    <hr>
+    In development of remake versions - Lyof(author of End's Phantasm)'s registry was used, that simplified and cleaned code that were remained from 1.20.1 version. Textures were redrew, models remade - instead of bosses and rpg stuff, content for QoL in game were added, including: gemsmithing, portable beacon(artifact table), disassembly table and so on that don't impact game that much what did in former versions.
+</p>
+</li>
+</ul>
+<h3>For Forge versions</h3>
 <ul>
 <li>
 <strong>How to summon mod bosses and what they drop?</strong>
