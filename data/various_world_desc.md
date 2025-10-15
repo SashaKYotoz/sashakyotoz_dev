@@ -1,11 +1,12 @@
 <h1>Various World</h1>
 
-<p> expansion oriented Minecraft mod for Forge(and NeoForge in future), that try to expanse Minecraft content in general: New difficulties, tools and materials, materials and workbenches, to fit its slogan - Across world and its beauty!</p>
+<p> expansion oriented Minecraft mod for Forge(1.16.5-1.20.1) and Neoforge(1.21.1-1.21.8+), that try to expanse Minecraft content in general: New difficulties, tools and materials, materials and workbenches, to fit its slogan - Across world and its beauty!</p>
 
 <h2>Links:</h2>
 <p>Mod's issue reporting page: <a href="https://github.com/SashaKYotoz/VariousWorld/issues"></a></p>
 
 <p>Curseforge: <a href="https://www.curseforge.com/minecraft/mc-mods/various-world">link</a></p>
+<p>Modrinth: <a href="https://modrinth.com/mod/various-world">link</a></p>
 
 <h2>FAQ</h2>
 <ul>
