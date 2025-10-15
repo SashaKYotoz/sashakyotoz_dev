@@ -1,10 +1,10 @@
 let currentSection = "Home";
 
 const sectionContent = {
-    Home: "/sections/home.html",
-    Modmaking: "/sections/modmaking.html",
-    GameMaking: "/sections/gamemaking.html",
-    Support: "/sections/support.html"
+    Home: '/sections/home.html',
+    Modmaking: '/sections/modmaking.html',
+    GameMaking: '/sections/gamemaking.html',
+    Support: '/sections/support.html'
 };
 function updateActiveNav(section) {
     document.querySelector('.navbar-nav .nav-item.active')?.classList.remove('active');
