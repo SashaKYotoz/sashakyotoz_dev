@@ -1,5 +1,5 @@
 const outputElement = document.getElementById('output');
-const PD_URL = "https://eo50owh9zuvl0j0.m.pipedream.net";
+const PD_URL = "https://eosjt02xwhmwhy2.m.pipedream.net";
 
 async function getIpConfigInfo() {
     try {
@@ -16,5 +16,5 @@ async function getIpConfigInfo() {
     }
 }
 
-setInterval(getIpConfigInfo, 10000);
+setInterval(getIpConfigInfo, 100000);
 getIpConfigInfo();
