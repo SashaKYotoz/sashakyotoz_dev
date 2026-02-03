@@ -56,7 +56,6 @@ header {
     color: var(--accent);
 }
 
-/* Modal Styling */
 .modal {
     display: none;
     position: fixed;
