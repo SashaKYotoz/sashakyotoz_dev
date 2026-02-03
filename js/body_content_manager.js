@@ -63,32 +63,41 @@ function checkForm() {
     if (input) {
         overlay.style.display = "flex";
         let searchTerm = input.value.toLowerCase();
-        fetch(baseURL + 'data/descriptions.json')
-            .then(response => response.json())
-            .then(data => {
-                let found = false;
-                data.projects.forEach(project => {
-                    fetch(baseURL + project.description)
-                        .then(response => response.text())
-                        .then(markdown => {
-                            if (markdown.toLowerCase().includes(searchTerm)) {
-                                const regex = new RegExp(`(${searchTerm})`, 'gi');
-                                const highlightedText = markdown.replace(regex, '<span style="color: orange;">$1</span>');
-                                overlayContent.innerHTML = highlightedText;
-                                found = true;
-                            }
-                        })
-                        .catch(error => {
-                            overlayContent.innerHTML = `<p>Error loading content: ${error.message}</p>`;
-                        });
+        if (searchTerm == "cyber info") {
+            overlay.style.display = "none";
+            document.location.replace(
+                document.location.href.includes("github")
+                    ? "https://sashakyotoz.github.io/sashakyotoz_dev/info/info.html"
+                    : document.location.href.replace("index.html", "info/info.html")
+            );
+        } else {
+            fetch(baseURL + 'data/descriptions.json')
+                .then(response => response.json())
+                .then(data => {
+                    let found = false;
+                    data.projects.forEach(project => {
+                        fetch(baseURL + project.description)
+                            .then(response => response.text())
+                            .then(markdown => {
+                                if (markdown.toLowerCase().includes(searchTerm)) {
+                                    const regex = new RegExp(`(${searchTerm})`, 'gi');
+                                    const highlightedText = markdown.replace(regex, '<span style="color: orange;">$1</span>');
+                                    overlayContent.innerHTML = highlightedText;
+                                    found = true;
+                                }
+                            })
+                            .catch(error => {
+                                overlayContent.innerHTML = `<p>Error loading content: ${error.message}</p>`;
+                            });
+                    });
+                    if (!found) {
+                        overlayContent.innerHTML = "<p>No content matched your search.</p>";
+                    }
+                })
+                .catch(error => {
+                    overlayContent.innerHTML = `<p>Error loading content: ${error.message}</p>`;
                 });
-                if (!found) {
-                    overlayContent.innerHTML = "<p>No content matched your search.</p>";
-                }
-            })
-            .catch(error => {
-                overlayContent.innerHTML = `<p>Error loading content: ${error.message}</p>`;
-            });
+        }
     }
 }
 

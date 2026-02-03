@@ -2,24 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Device IpConfig Feed</title>
-    <style>
-        body { background: #121212; color: #00e676; font-family: 'Consolas', monospace; padding: 30px; }
-        #output { 
-            background: #1e1e1e; 
-            border: 1px solid #333; 
-            padding: 20px; 
-            white-space: pre; 
-            border-radius: 8px;
-            line-height: 1.4;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SashaKYotoz's Development</title>
+    <link rel="stylesheet" href="../css/info_styles.css">
 </head>
 <body>
-    <h3>Active Network Configuration</h3>
-    <div id="output">Connecting to Pipedream...</div>
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <header>
+        <div class="logo">Cyber.info</div>
+        <nav>
+            <button class="social-btn"><link url="https://github.com/SashaKYotoz"/></button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>CYBER.INFO</h1>
+            <p>Click a tile to see command shortcuts.</p>
+        </section>
+        <div class="grid-container" id="grid">
+            <div class="card" data-cmd="bash">
+                <span class="icon">$_</span>
+                <span class="title">Bash</span>
+            </div>
+        </div>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <pre id="modal-body"></pre>
+        </div>
+    </div>
     <script src="info_getter.js"></script>
 </body>
+
 </html>
