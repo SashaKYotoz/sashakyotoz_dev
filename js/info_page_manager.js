@@ -38,9 +38,9 @@ async function loadPanels() {
 }
 
 document.getElementById("back_to_main").onclick = async () => {
-    const response = await fetch("https://github.com/SashaKYotoz/sashakyotoz_dev/tree/main/html/main.html");
+    const response = await fetch("https://sashakyotoz.github.io/sashakyotoz_dev/html/main.html");
     const newHTML = await response.text();
-    document.innerHTML = newHTML;
+    document.documentElement.innerHTML = newHTML;
 }
 
 closeBtn.onclick = () => modal.style.display = "none";

@@ -71,22 +71,32 @@ async function combosMatch(searchTerm) {
         for (const [key, value] of Object.entries(data)) {
             if (searchTerm == key) {
                 overlay.style.display = "none";
-                const response = await fetch("https://github.com/SashaKYotoz/sashakyotoz_dev/tree/main/html/" + value);
+                
+                const fileUrl = baseURL + 'html/' + value; 
+                const response = await fetch(fileUrl);
+                
+                if (!response.ok) throw new Error("File not found");
+
                 const newHTML = await response.text();
-                document.innerHTML = newHTML;
+                document.documentElement.innerHTML = newHTML; 
                 return true;
             }
         }
-    } catch (error) { }
+    } catch (error) { 
+        console.error("Combo match error:", error);
+    }
     return false;
 }
 
-function checkForm() {
+async function checkForm() {
     if (input) {
         overlay.style.display = "flex";
         let searchTerm = input.value.toLowerCase().trim();
-        console.log(combosMatch(searchTerm));
-        if (combosMatch(searchTerm)) { }
+        const isMatch = await combosMatch(searchTerm);
+        console.log(isMatch);
+        if (isMatch) {
+            return;
+        }
         else {
             fetch(baseURL + 'data/descriptions.json')
                 .then(response => response.json())
