@@ -67,17 +67,17 @@ async function combosMatch(searchTerm) {
     try {
         const response = await fetch(GIST_URL);
         const data = await response.json();
-        
+
         for (const [key, value] of Object.entries(data)) {
             if (searchTerm == key) {
                 overlay.style.display = "none";
-                const response = await fetch("../html/"+value);
+                const response = await fetch("https://github.com/SashaKYotoz/sashakyotoz_dev/tree/main/html/" + value);
                 const newHTML = await response.text();
                 document.innerHTML = newHTML;
                 return true;
             }
         }
-    } catch (error) {}
+    } catch (error) { }
     return false;
 }
 
@@ -86,7 +86,7 @@ function checkForm() {
         overlay.style.display = "flex";
         let searchTerm = input.value.toLowerCase().trim();
         console.log(combosMatch(searchTerm));
-        if (combosMatch(searchTerm)) {} 
+        if (combosMatch(searchTerm)) { }
         else {
             fetch(baseURL + 'data/descriptions.json')
                 .then(response => response.json())
