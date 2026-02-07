@@ -1,6 +1,9 @@
 const overlayContent = document.getElementById("overlay-content");
 const baseURL = 'https://sashakyotoz.github.io/sashakyotoz_dev/';
 const overlay = document.getElementById("overlay");
+
+const GIST_URL = 'https://gist.githubusercontent.com/SashaKYotoz/ba408e314dd3948a2d49d6047573a485/raw/combos.json';
+
 document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("content-keeper").addEventListener("click", function (event) {
@@ -59,18 +62,32 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
     checkForm();
 });
+
+async function combosMatch(searchTerm) {
+    try {
+        const response = await fetch(GIST_URL);
+        const data = await response.json();
+        
+        for (const [key, value] of Object.entries(data)) {
+            if (searchTerm == key) {
+                overlay.style.display = "none";
+                const response = await fetch("../html/"+value);
+                const newHTML = await response.text();
+                document.innerHTML = newHTML;
+                return true;
+            }
+        }
+    } catch (error) {}
+    return false;
+}
+
 function checkForm() {
     if (input) {
         overlay.style.display = "flex";
-        let searchTerm = input.value.toLowerCase();
-        if (searchTerm == "cyber info") {
-            overlay.style.display = "none";
-            document.location.replace(
-                document.location.href.includes("github")
-                    ? "https://sashakyotoz.github.io/sashakyotoz_dev/info/info.html"
-                    : document.location.href.replace("index.html", "info/info.html")
-            );
-        } else {
+        let searchTerm = input.value.toLowerCase().trim();
+        console.log(combosMatch(searchTerm));
+        if (combosMatch(searchTerm)) {} 
+        else {
             fetch(baseURL + 'data/descriptions.json')
                 .then(response => response.json())
                 .then(data => {

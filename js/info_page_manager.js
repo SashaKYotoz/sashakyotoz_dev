@@ -1,24 +1,3 @@
-// const outputElement = document.getElementById('output');
-// const PD_URL = "https://eosjt02xwhmwhy2.m.pipedream.net";
-
-// async function getIpConfigInfo() {
-//     try {
-//         const response = await axios.get(PD_URL);
-
-//         if (response.data && response.data.ip_data) {
-//             outputElement.innerText = response.data.ip_data;
-//         } else {
-//             outputElement.innerText = "Waiting for device to check in...";
-//         }
-//     } catch (error) {
-//         console.error("Error fetching from Pipedream:", error);
-//         outputElement.innerText = "Error connecting to relay.";
-//     }
-// }
-
-// setInterval(getIpConfigInfo, 100000);
-// getIpConfigInfo();
-
 const GIST_URL = 'https://gist.githubusercontent.com/SashaKYotoz/fd05d225708c61c3c16ea63a04d30183/raw/commands.json';
 
 const grid = document.getElementById("grid");
@@ -58,11 +37,11 @@ async function loadPanels() {
     }
 }
 
-document.getElementById("back_to_main").onclick = () => document.location.replace(
-    document.location.href.includes("github")
-        ? "https://sashakyotoz.github.io/sashakyotoz_dev/"
-        : document.location.href.replace("info/info.html", "index.html")
-);
+document.getElementById("back_to_main").onclick = async () => {
+    const response = await fetch("../html/main.html");
+    const newHTML = await response.text();
+    document.innerHTML = newHTML;
+}
 
 closeBtn.onclick = () => modal.style.display = "none";
 window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; }
