@@ -1,9 +1,6 @@
 const overlayContent = document.getElementById("overlay-content");
 const baseURL = 'https://sashakyotoz.github.io/sashakyotoz_dev/';
 const overlay = document.getElementById("overlay");
-
-const GIST_URL = 'https://gist.githubusercontent.com/SashaKYotoz/ba408e314dd3948a2d49d6047573a485/raw/combos.json';
-
 document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("content-keeper").addEventListener("click", function (event) {
@@ -62,42 +59,18 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
     checkForm();
 });
-
-async function combosMatch(searchTerm) {
-    try {
-        const response = await fetch(GIST_URL);
-        const data = await response.json();
-
-        for (const [key, value] of Object.entries(data)) {
-            if (searchTerm == key) {
-                overlay.style.display = "none";
-                
-                const fileUrl = baseURL + 'html/' + value; 
-                const response = await fetch(fileUrl);
-                
-                if (!response.ok) throw new Error("File not found");
-
-                const newHTML = await response.text();
-                document.documentElement.innerHTML = newHTML; 
-                return true;
-            }
-        }
-    } catch (error) { 
-        console.error("Combo match error:", error);
-    }
-    return false;
-}
-
-async function checkForm() {
+function checkForm() {
     if (input) {
         overlay.style.display = "flex";
-        let searchTerm = input.value.toLowerCase().trim();
-        const isMatch = await combosMatch(searchTerm);
-        console.log(isMatch);
-        if (isMatch) {
-            return;
-        }
-        else {
+        let searchTerm = input.value.toLowerCase();
+        if (searchTerm == "cyber info") {
+            overlay.style.display = "none";
+            document.location.replace(
+                document.location.href.includes("github")
+                    ? "https://sashakyotoz.github.io/sashakyotoz_dev/html/info.html"
+                    : document.location.href.replace("index.html", "html/info.html")
+            );
+        } else {
             fetch(baseURL + 'data/descriptions.json')
                 .then(response => response.json())
                 .then(data => {

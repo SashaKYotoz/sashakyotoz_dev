@@ -37,11 +37,11 @@ async function loadPanels() {
     }
 }
 
-document.getElementById("back_to_main").onclick = async () => {
-    const response = await fetch("https://sashakyotoz.github.io/sashakyotoz_dev/html/main.html");
-    const newHTML = await response.text();
-    document.documentElement.innerHTML = newHTML;
-}
+document.getElementById("back_to_main").onclick = () => document.location.replace(
+    document.location.href.includes("github")
+        ? "https://sashakyotoz.github.io/sashakyotoz_dev/"
+        : document.location.href.replace("html/info.html", "index.html")
+);
 
 closeBtn.onclick = () => modal.style.display = "none";
 window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; }
