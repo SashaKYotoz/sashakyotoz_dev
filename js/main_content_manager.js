@@ -244,12 +244,14 @@ const sectionContent = {
                 </div>
             </div>`
 };
+
 function updateActiveNav(section) {
     document.querySelector('.navbar-nav .nav-item.active')?.classList.remove('active');
     let newActiveItem = document.querySelector(`.nav-link[data-section="${section}"]`)?.closest('.nav-item');
     if (newActiveItem)
         newActiveItem.classList.add('active');
 }
+
 function updateContent(section) {
     const contentKeeper = document.getElementById("content-keeper");
 
@@ -261,6 +263,7 @@ function updateContent(section) {
         contentKeeper.classList.remove("hidden");
     }, 500);
 }
+
 function updateContentAndSection(section) {
     updateContent(section);
     if (section && section !== currentSection) {
