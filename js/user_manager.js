@@ -3,7 +3,8 @@ const GIST_URL = 'https://gist.githubusercontent.com/SashaKYotoz/1403848bafa6da8
 
 async function gatherEnteringUser() {
     const flag = await fetch(FLAG_URL);
-    let flag_value = flag.flag;
+    const flag_data = await flag.json();
+    let flag_value = flag_data.flag;
     if (flag_value) {
         const response = await fetch(GIST_URL);
         const data = await response.json();
